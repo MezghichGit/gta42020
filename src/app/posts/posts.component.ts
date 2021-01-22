@@ -22,7 +22,11 @@ export class PostsComponent implements OnInit {
       response => {
         this.posts = response;
         console.log(this.posts)
-      }
+      },
+    error => {
+      alert("Problème de chargement de doonées depuis le serveur!");
+    }
+
     )
   }
 

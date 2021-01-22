@@ -8,13 +8,21 @@ import { ListCoursComponent } from './list-cours/list-cours.component';
 import { FirstCuPipe } from './first-cu.pipe';
 import { PostsComponent } from './posts/posts.component';
 import { PostService } from './services/post.service';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ListEmployerComponent } from './list-employer/list-employer.component';
+import { AddEmployerComponent } from './add-employer/add-employer.component';
+import { UpdateEmployerComponent } from './update-employer/update-employer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListCoursComponent,
     FirstCuPipe,
-    PostsComponent
+    PostsComponent,
+    NavbarComponent,
+    ListEmployerComponent,
+    AddEmployerComponent,
+    UpdateEmployerComponent
   ],
   imports: [
     BrowserModule,

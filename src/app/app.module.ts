@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ListCoursComponent } from './list-cours/list-cours.component';
 import { FirstCuPipe } from './first-cu.pipe';
 import { PostsComponent } from './posts/posts.component';
+import { PostService } from './services/post.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import { PostsComponent } from './posts/posts.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    PostService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

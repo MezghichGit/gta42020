@@ -1,0 +1,15 @@
+h1,h2{
+    color:red
+}
+
+h3{
+    color:blue
+}
+
+h4{
+    color:green
+}
+
+div{
+    border-style: solid;
+}

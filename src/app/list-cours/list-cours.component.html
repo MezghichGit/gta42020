@@ -1,0 +1,41 @@
+<h2>Liste des cours</h2>
+
+<h4>Niveau universitaire : {{niveau}}</h4>
+
+<ul>
+    <li *ngFor="let course of courses">{{course}}</li>
+</ul>
+
+<h3 align="center">Détails des cours</h3>
+<table border="1" align="center">
+    <tr><th>ID</th><th>Titre</th><th>Volume Horaire</th></tr>
+    <tr *ngFor="let cours of mesCours" align="center">
+      <td>{{cours.id}}</td>
+      <td>{{cours.titre | uppercase }}</td>
+      <td>{{cours.vh }}</td>
+    </tr>
+</table>
+
+<button class="btn btn-primary" (click)="clicBtn()">Valider</button>
+
+<br/> <br/>
+<button class="btn btn-warning" (mouseover)=" hoverBtn()">Update</button>
+
+<br/> <br/>
+<button class="btn btn-warning" (click)=" showhide()">Show/Hide DIV</button>
+
+
+<div [hidden]="state"  [style.backgroundColor]="bgc">
+Une div de test
+</div>
+
+Taper votre langage préféré :<input #lang type="text"  (keyup.enter)="display(lang.value)"/>
+
+<hr/>
+
+<input  [(ngModel)]="divColor" type="text">
+<div [style.backgroundColor]="divColor">
+une div de test
+</div>
+
+Le contenue de la propriété est {{divColor}}

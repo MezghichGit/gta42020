@@ -3,3 +3,8 @@ export interface Cours {
   titre: string,
   vh : number
 }
+
+export interface Employer {
+  cin: number,
+  nom : string
+ }
